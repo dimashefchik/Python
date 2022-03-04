@@ -97,9 +97,7 @@ print(item_3)
 item_3 %= 3
 #  47. Вывести item_3 в консоль.
 print(item_3)
-
 # Boolean
-#
 #  48. Создать переменную b_item_t и присвоить True
 b_item_t = True
 #  49. Создать переменную b_item_f и присвоить False
