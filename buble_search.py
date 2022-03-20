@@ -1,15 +1,15 @@
-def buble(array):
-    length = len(array)
-    for i in range(length):
-        for j in range(0,length-i-1):
-            if array[j] > array[j+1]:
-                temp = array[j]
-                array[j] = array[j+1]
-                array[j+1] = temp
-    return array
+oldlist = [10, 75, 43, 14, 25, -4, 28]
+def bubble(oldlist):
+    last_item = len(oldlist) - 1
+    for z in range(0, last_item):      
+        for x in range(0, last_item - z):
+            if oldlist[x] > oldlist[x+1]:
+                oldlist[x], oldlist[x+1] = oldlist[x+1], oldlist[x]     # меняем 0 и 1 элемент местами если 1>0
+            print(oldlist)
+    return oldlist
 
-array = [4,5,7,3]
-print(array)
-buble(array)
-print(array)
+print(oldlist)
+newlist = bubble(oldlist).copy()
+print(newlist)
+
 
